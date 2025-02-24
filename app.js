@@ -12,9 +12,9 @@ app.use(express.json());
 app.use("/images", express.static("./imgs"));
 connectDB();
 
-app.use("/user", userRouter);
-app.use("/usertype", userTypeRouter);
-app.use("/product", productRouter);
+app.use("/users", userRouter);
+app.use("/usertypes", userTypeRouter);
+app.use("/products", productRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello in my MVC Backend API - MINA ADEL");
